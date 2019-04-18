@@ -1,0 +1,162 @@
+/* ---------------- // reset ---------------- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: none;
+font-style: normal;
+text-align: left;
+zoom: 1;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+/* ---------------- base ---------------- */
+body {
+font-family:"游ゴシック","YuGothic","Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro","Meiryo","メイリオ","ＭＳ ゴシック",sans-serif;
+/*font-family:'Lucida Grande','Hiragino Kaku Gothic ProN', Meiryo, sans-serif;*/
+/*font-family: 'yugo','Lucida Grande','Hiragino Kaku Gothic ProN', Meiryo, sans-serif;*/
+color: #222;
+line-height: 1.6;
+font-size: 16px;
+font-weight: 500;
+position: relative;
+}
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+/* body{
+    font-family: "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+} */
+table {
+border-collapse: collapse;
+font-family: inherit;
+}
+h1,h2,h3,h4,h5 {
+font-size: 100%;
+font-weight: normal;
+}
+input,textarea,select {
+font-family: inherit;
+font-size: 16px;
+}
+input[type="button"],input[type="text"],input[type="submit"] {
+   -webkit-appearance: none;
+   border-radius: 0;
+}
+textarea {
+resize: none;
+}
+th,td {
+border-collapse: collapse;
+}
+table th,table td {
+white-space: nowrap;
+}
+ul,ol {
+list-style-type: none;
+}
+img {
+vertical-align: text-bottom;
+vertical-align: -webkit-baseline-middle;
+}
+img{
+max-width: 100%;
+height: auto;
+width /***/:auto;
+}
+/* ---------------- link ---------------- */
+a {transition: all .3s ease-out;}
+a:link { text-decoration:none; color:#222; }
+a:visited { text-decoration:none; color:#222; }
+a:hover { text-decoration:none; color:#222; }
+a:active { text-decoration:none; color:#222; }
+/* ---------------- clearfix ---------------- */
+.clearfix:after { content:" "; display:block; height:0; clear:both; visibility:hidden; font-size: 0.1em;}
+.clearfix { display:inline-block;}
+/*\*/
+* html .clearfix { height:1%; }
+.clearfix { display:block; }
+/**/
+/* ---------------- reset // ---------------- */
+/* ---------------- font ---------------- */
+@font-face {
+  font-family: 'century';
+  src: url('../font/GOTHIC_1.woff') format('woff'),
+       url('../font/GOTHIC_1.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'century_b';
+  src: url('../font/GOTHICB_1.woff') format('woff'),
+       url('../font/GOTHICB_1.ttf') format('truetype');
+}
+.century {
+	font-family: 'century';
+	font-weight: 100;
+}
+.century_b {
+	font-family: 'century_b';
+}
+@font-face {
+  font-family: 'brandon_bld_it';
+  src: url('../font/Brandon_bld_it.ttf') format('truetype');
+}
+.brandon_bld_it {
+	font-family: 'brandon_bld_it';
+}
+@font-face {
+  font-family: 'brandon_med_it';
+  src: url('../font/Brandon_med_it.ttf') format('truetype');
+}
+.brandon_med_it {
+	font-family: 'brandon_med_it';
+}
+.mincho {
+	font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+/*--------------------------------------
+nowrap
+--------------------------------------*/
+.nowrap {
+	white-space: nowrap;
+}
+/*--------------------------------------
+box-sizing
+--------------------------------------*/
+* {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-mos-box-sizing: border-box;
+	-mz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+}
+/*--------------------------------------
+transition
+--------------------------------------*/
+.tra {
+	transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-webkit-transition: all 0.5s ease-out;
+	-ms-transition: all 0.5s ease-out;
+}
+.preload * {
+	-webkit-transition: none !important;
+	-moz-transition: none !important;
+	-ms-transition: none !important;
+	-o-transition: none !important;
+	transition: none !important;
+}
+/*--------------------------------------
+コンテンツ
+--------------------------------------*/
